@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+    <ion-item>
+        <ion-label floating color="primary">Local</ion-label>
+        <ion-input placeholder="Local" [(ngModel)]="local"></ion-input>
+    </ion-item>
+
+    <ion-buttons end>
+        <button ion-button (click)="addMarker()">
+            <ion-icon name="add"></ion-icon>
+            Marcar local
+        </button>
+    </ion-buttons>
+
+    <div #map id="map"></div>
+
+
+    
+</ion-content>
