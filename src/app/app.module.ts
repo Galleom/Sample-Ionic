@@ -23,7 +23,7 @@ import { Geolocation } from '@ionic-native/geolocation';
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot({
         name: '__mydb',
-        driverOrder: ['indexeddb', 'sqlite', 'websql']
+        driverOrder: ['sqlite', 'indexeddb', 'websql']
     })
   ],
   bootstrap: [IonicApp],

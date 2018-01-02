@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 
 declare var google;
@@ -9,6 +10,7 @@ declare var google;
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+@Injectable()
 export class HomePage {
     @ViewChild('map') mapElement: ElementRef;
     map: any;
@@ -53,9 +55,10 @@ export class HomePage {
             });
             let content = "<h4>" + this.local + "</h4>";
             this.addInfoWindow(marker, content);
-            this.storage.set(String(this.storage.length()), [this.local, this.map.getCenter()]);
+            //this.storage.set(String(this.storage.length()), this.map.getCenter());
+            //this.storage.set('yes', this.map.getCenter());
         }
-    }
+    } 
 
     addInfoWindow(marker, content) {
         let infoWindow = new google.maps.InfoWindow({
