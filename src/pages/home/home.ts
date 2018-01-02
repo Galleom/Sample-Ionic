@@ -29,7 +29,7 @@ export class HomePage {
         }
         this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
         //this.storage.clear();
-        
+        /*
         this.storage.forEach((value, key, index) => {
 
             let marker = new google.maps.Marker({
@@ -40,7 +40,7 @@ export class HomePage {
 
             let content = "<h4>" + value[1] + "</h4>";
             this.addInfoWindow(value[0], value[1]);
-        })
+        })*/
         
     }
 
@@ -53,7 +53,7 @@ export class HomePage {
             });
             let content = "<h4>" + this.local + "</h4>";
             this.addInfoWindow(marker, content);
-            this.storage.set(this.storage.length(), [this.local, this.map.getCenter()]);
+            //this.storage.set(String(this.storage.length()), [this.local, this.map.getCenter()]);
         }
     }
 
