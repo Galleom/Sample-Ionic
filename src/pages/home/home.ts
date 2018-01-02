@@ -45,7 +45,7 @@ export class HomePage {
     }
 
     addMarker() {
-        if (!this.local) {
+        if (this.local != "") {
             let marker = new google.maps.Marker({
                 map: this.map,
                 animation: google.maps.Animation.DROP,
@@ -53,7 +53,7 @@ export class HomePage {
             });
             let content = "<h4>" + this.local + "</h4>";
             this.addInfoWindow(marker, content);
-            //this.storage.set(String(this.storage.length()), [this.local, this.map.getCenter()]);
+            this.storage.set(String(this.storage.length()), [this.local, this.map.getCenter()]);
         }
     }
 
