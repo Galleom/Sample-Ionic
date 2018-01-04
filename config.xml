@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<widget defaultLocale="en-US" id="io.cordova.myapp7eb1f0" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="1" defaultLocale="en-US" id="com.solunar.ionicsample" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>sample</name>
   <description>An Ionic Framework and Cordova project for Visual Studio</description>
-  <author email="vscordovatools@microsoft.com" href="http://taco.visualstudio.com">Visual Studio JS Mobile Tooling</author>
+  <author email="vscordovatools@microsoft.com" href="http://taco.visualstudio.com">Estevam Nicolas Chen</author>
   <content src="index.html" />
   <access origin="*" />
   <allow-navigation href="http://ionic.local/*" />
@@ -96,4 +96,6 @@
   <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
   <plugin name="cordova-sqlite-storage" version="2.1.4" />
   <plugin name="cordova-plugin-geolocation" version="4.0.1" />
+  <preference name="ShowTitle" value="True" />
+  <preference name="InAppBrowserStorageEnabled" value="False" />
 </widget>

@@ -15,7 +15,7 @@ export class HomePage {
     @ViewChild('map') mapElement: ElementRef;
     map: any;
     markers: any[];
-    local: '';
+    local: string;
 
     constructor(public navCtrl: NavController, private storage: Storage) {
         this.markers = new Array<any>();
